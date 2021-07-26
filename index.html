@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Brochure</title>
+    <style>
+        #brochure {
+            display: flex;
+            height: 1000px;
+            width: 1300px;
+            border: 1px solid orange;
+        }
+        /* parent > children elements
+            select all of the chidlren element that 
+            have that specific parent
+         */
+        #brochure > div {
+            width: 100%; 
+            text-align: center;
+        }
+        .col1 {
+            display: flex;
+            flex-direction: column;
+            border-right: 10px solid black;            
+        }
+        .cell1 {
+            flex: 2;
+            text-decoration: underline;
+            font-size: 60px;
+            padding-top: 150px;
+            font-family: sans-serif;
+            
+
+        }
+        .cell2 {
+            flex: 3;
+            font-size: large;
+            padding-top: 50px;
+            font-size: 45px;
+            font-family: sans-serif;
+            padding-bottom: 50px;
+        }
+        .cell3 {
+            flex: 5;
+            text-align: left;
+        
+        }
+        #column2 > div {
+            width: 100%;
+            border-right: 10px solid black;
+        }
+        .col2 {
+            display: flex;
+            flex-direction: column;
+        }
+        .cell4 {
+            flex: 3;
+            padding-top: 50px;
+            padding-bottom: 10px;
+        }
+        .cell5 {
+            flex: 3;
+            padding-bottom: 70px;
+            padding-top: 30px;
+            font-size: 60px;
+            text-align: center;
+            text-decoration: underline;
+            font-family: sans-serif;
+        }
+        .cell6 {
+            flex: 4;
+            font-size: 26px;
+            text-align: left;
+            padding-bottom: 270px;
+        }    
+        #column3 > div {
+            width: 100%;            
+        }
+        .col3 {
+            display: flex;
+            flex-direction: column;
+        }
+        .cell7 {
+            flex: 1;
+            padding-bottom: 20px;
+            padding-top: 40px;
+        }
+        .cell8 {
+            flex: 5;            
+            font-size: 46px;
+            font-family: sans-serif;     
+            border-bottom: 10px solid black;   
+            border-top: 10px solid black;  
+        }              
+        .cell9 {
+            flex: 1;
+            font-size: 26px;
+            text-align: left;
+            padding-left: 15px;
+            padding-top: 50px;
+            padding-bottom: 30px;     
+        }
+        .cell10 {
+            flex: 1;
+            padding-top: 150px;
+    </style>
+</head>
+<body>
+    <h1>My Brochure</h1>
+    <div id="brochure">
+        <div class="col1">
+            <div class="cell1 genCell">Follow Us On<br> Social Media</div>
+            <div class="cell2 genCell">Facebook <br> Instagram <br> Twitter</div>
+            <div class="cell3 genCell"><img src="images\treeBranch.png" alt="treebranch.png" height="270" width="390"></div>
+        </div>
+    <div id="column2">   
+        <div class="col2"></div>
+            <div class="cell4 genCell1"><img src="images\americanFlag.png" height="220" width="390"></div>
+            <div class="cell5 genCell1">Contact Us</div>
+            <div class="cell6 genCell1">Phone Number<br>(123)456-7890<br><br>Email:<br>john.smith@google.com<br><br>Adress:<br>1775 Army Navy Street<br>Marine Corps, Air Force, USA 01230</div>
+        </div>    
+    <div id="column3">
+        <div class="col3"></div>
+        <div class="cell7 genCell2"><img src="images\VITlogo.png" height="80" width="150"></div>
+        <div class="cell8 genCell2"><strong>Silent Auction</strong></div>
+        <div class="cell9 genCell2"> Join us for the annual VetsinTech<br>Silent Auction!<br><br>Date:XX/XX/XXXX<br>Time:00:00 PM EST</div>
+        <div class="cell10 genCell2"><img src="images\photosOnTable.png" height="300" width="400"></div>
+    </div>
+    <!-- <div>something</div> -->
+</body>
+</html>
